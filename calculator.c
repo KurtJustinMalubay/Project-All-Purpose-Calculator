@@ -62,6 +62,9 @@ int main()
                 cm *= 0.3937;
                 printf("The answer is %lf Inches", cm);
                 break;
+
+            default:
+                printf("Error! Incorrect input");
             }
 
         case 2:
@@ -107,8 +110,10 @@ int main()
                 sqm *= 0.000247;
                 printf("The answer is %lf acres", sqm);
                 break;
+
+            default:
+                printf("Error! Incorrect input");
             }
-            break;
 
         case 3:
             printf("\n\nVolume\n");
@@ -135,8 +140,10 @@ int main()
                 cmeters *= 35.314;
                 printf("The answer is %lf cubic feet", cmeters);
                 break;
+
+            default:
+                printf("Error! Incorrect input");
             }
-            break;
 
         case 4:
             printf("\n\nMass\n");
@@ -162,8 +169,10 @@ int main()
                 kg *= 2.205;
                 printf("The answer is %lf kilograms", kg);
                 break;
+
+            default:
+                printf("Error! Incorrect input");
             }
-            break;
 
         case 5:
             printf("\n\nPressure\n");
@@ -189,8 +198,10 @@ int main()
                 kp *= 0.145;
                 printf("The answer is %lf pounds per square inch", kp);
                 break;
+
+            default:
+                printf("Error! Incorrect input");
             }
-            break;
 
         case 6:
             printf("\n\nTemperature\n");
@@ -216,30 +227,188 @@ int main()
                 f = 26 * 9 / 5 + 32;
                 printf("The answer is %lf celcius", f);
                 break;
+
+            default:
+                printf("Error! Incorrect input");
             }
-            break;
+
+        default:
+            printf("Error! Incorrect input");
         }
+        break;
 
     case 2:
-        printf("\n\nArea\n");
-        printf("(1) Square Feet to Square Meters\n(2) Square Meters to Square Feet\n(3) Acres to Square Meters\n(4) Square Meters to Acres\n\nInput answer here: ");
+        printf("\n\nArchitecture Math\n");
+        printf("(1) Get the Area of a Rectangle\n(2) Get the Area of a Triangle\n(3) Get the Area of a Circle\n(4) Get the Perimeter of a Rectangle\n(5) Get the Perimeter of a Triangle\n(6) Get the Circumference of a Circle\n(7) Get the Volume of a Rectangular Prism\n(8) Get the Volume of a Cylinder\n(9) Get the Volume of a Sphere\n(10) Get the Volume of a Pyramid\n(11) Solve for Pythagorean Theorem\n(12) Find the Slope of a Line\n\nInput answer here: ");
         scanf("%d", &mode);
-        break;
 
         switch (mode)
         {
         case 1:
+            printf("\n\nGet the Area of a Rectangle\n");
+            printf("Enter length: ");
+            double length;
+            scanf("%lf", &length);
+            printf("Enter width: ");
+            double width;
+            scanf("%lf", &width);
+            double area1;
+            area1 = length * width;
+            printf("The area of the rectangle is %lf", area1);
             break;
 
         case 2:
+            printf("\n\nGet the Area of a Triangle\n");
+            printf("Enter base: ");
+            double base;
+            scanf("%lf", &base);
+            printf("Enter height: ");
+            double height;
+            scanf("%lf", &height);
+            double area2;
+            area2 = base * height * 1 / 2;
+            printf("The area of the triangle is %lf", area2);
             break;
 
         case 3:
+            printf("\n\nGet the Area of a Circle\n");
+            printf("Enter radius: ");
+            double radius;
+            scanf("%lf", &radius);
+            double area3;
+            area3 = pi * (radius * radius);
+            printf("The area of the circle is %lf", area3);
             break;
 
         case 4:
+            printf("\n\nGet the Perimeter of a Rectangle\n");
+            printf("Enter length: ");
+            double length1;
+            scanf("%lf", &length1);
+            printf("Enter width: ");
+            double width1;
+            scanf("%lf", &width1);
+            double perimeter;
+            perimeter = 2 * (length1 + width1);
+            printf("The perimeter of the rectangle is %lf", perimeter);
             break;
+
+        case 5:
+            printf("\n\nGet the Perimeter of a Triangle\n");
+            printf("Enter side a: ");
+            double a;
+            scanf("%lf", &a);
+            printf("Enter side b: ");
+            double b;
+            scanf("%lf", &b);
+            printf("Enter side c: ");
+            double c;
+            scanf("%lf", &c);
+            double perimeter1;
+            perimeter1 = a + b + c;
+            printf("The perimeter of the triangle is %lf", perimeter1);
+            break;
+
+        case 6:
+            printf("\n\nGet the Circumference of a Circle\n");
+            printf("Enter radius: ");
+            double radius1;
+            scanf("%lf", &radius1);
+            double circumference;
+            circumference = 2 * pi * radius;
+            printf("The circumference of the circle is %lf", circumference);
+            break;
+
+        case 7:
+            printf("\n\nGet the Volume of a Rectangular Prism\n");
+            printf("Enter length: ");
+            double length2;
+            scanf("%lf", &length2);
+            printf("Enter width: ");
+            double width2;
+            scanf("%lf", &width2);
+            printf("Enter height: ");
+            double height2;
+            scanf("%lf", &height2);
+            double volume2;
+            volume2 = length2 * width2 * height2;
+            printf("The volume of the rectangular prism is: %lf", volume2);
+            break;
+
+        case 8:
+            printf("\n\nGet the Volume of a Cylinder\n");
+            printf("Enter radius: ");
+            double radius3;
+            scanf("%lf", &radius3);
+            printf("Enter height: ");
+            double height3;
+            scanf("%lf", &height3);
+            double volume3;
+            volume3 = pi * (radius3 * radius3) * height3;
+            printf("The volume of the cylinder is %lf", volume3);
+            break;
+
+        case 9:
+            printf("\n\nGet the Volume of a Sphere\n");
+            printf("Enter radius: ");
+            double radius4;
+            scanf("%lf", &radius4);
+            double volume4;
+            volume4 = (4 / 3) * pi * (radius4 * radius4 * radius4);
+            printf("The volume of the sphere is %lf", volume4);
+            break;
+
+        case 10:
+            printf("\n\nGet the Volume of a Pyramid\n");
+            printf("Enter base: ");
+            double base5;
+            scanf("%lf", &base5);
+            printf("Enter height: ");
+            double height5;
+            scanf("%lf", &height5);
+            double volume5;
+            volume5 = base5 * height5 * 1 / 3;
+            printf("The volume of the pyramid is %lf", volume5);
+            break;
+
+        case 11:
+            printf("\n\nSolve for Pythagorean Theorem\n");
+            printf("Enter a: ");
+            double a6;
+            scanf("%lf", &a6);
+            printf("Enter b: ");
+            double b6;
+            scanf("%lf", &b6);
+            double c6;
+            c6 = (a6 * a6) + (b6 * b6);
+            c6 = sqrtf(c6);
+            printf("The answer is %lf", c6);
+            break;
+
+        case 12:
+            printf("\n\nFind the Slope of a Line\n");
+            printf("Enter x1: ");
+            double x1;
+            scanf("%lf", &x1);
+            printf("Enter x2: ");
+            double x2;
+            scanf("%lf", &x2);
+            printf("Enter y1: ");
+            double y1;
+            scanf("%lf", &y1);
+            printf("Enter y2: ");
+            double y2;
+            scanf("%lf", &y2);
+            double m;
+            m = (y2 - y1) / (x2 - x1);
+            printf("The slope of the line is %lf", m);
+            break;
+
+        default:
+            printf("Error! Incorrect input");
         }
+        break;
+
     case 3:
         printf("To be made");
         break;
