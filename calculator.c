@@ -4,12 +4,15 @@
 int main()
 {
     int mode;
-    int mode2;
     // Basic Unit Conversion
     double ft, meters, in, cm, sqft, sqmt, acres, cft, cmeters, pounds, kg, kp, ce, f;
     // Architecture Math
     double length, width, area, base, height, radius, perimeter, a, b, c, circumference, volume;
     const double pi = 3.14159265;
+    // basic calculator
+    char operator;
+    double num1, num2, answer;
+    int rem1, rem2, rem;
 
     printf("(1) Basic Unit Conversion\n(2) Architecture Math\n(3) Normal Calculator\n\nInput answer here: ");
     scanf("%d", &mode);
@@ -371,7 +374,43 @@ int main()
         break;
 
     case 3:
-        printf("To be made");
+        printf("\n\nChoose your operator:\nAddition (+)\nSubtraction (-)\nMultiplication (*)\nDivision (/)\n\nEnter operator here: ");
+        scanf("%s", &operator);
+        switch (operator)
+        {
+        case '+':
+            printf("Enter a: ");
+            scanf("%lf", &num1);
+            printf("Enter b: ");
+            scanf("%lf", &num2);
+            answer = num1 + num2;
+            printf("\nThe sum of the two values is: %lf", answer);
+            break;
+        case '-':
+            printf("Enter a: ");
+            scanf("%lf", &num1);
+            printf("Enter b: ");
+            scanf("%lf", &num2);
+            answer = num1 - num2;
+            printf("\nThe difference between the two values is: %lf", answer);
+            break;
+        case '*':
+            printf("Enter a: ");
+            scanf("%lf", &num1);
+            printf("Enter b: ");
+            scanf("%lf", &num2);
+            answer = num1 * num2;
+            printf("\nThe product of the two values is %lf", answer);
+            break;
+        case '/':
+            printf("Enter a: ");
+            scanf("%lf", &num1);
+            printf("Enter b: ");
+            scanf("%lf", &num2);
+            answer = num1 / num2;
+            printf("\nThe quotient of the two values is %lf", answer);
+            break;
+        }
         break;
 
     default:
