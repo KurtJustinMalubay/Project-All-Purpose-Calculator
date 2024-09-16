@@ -16,22 +16,18 @@ int main()
 
     printf("(1) Basic Unit Conversion\n(2) Architecture Math\n(3) Normal Calculator\n\nInput answer here: ");
     scanf("%d", &mode);
-
     switch (mode)
     {
     case 1:
         printf("\n\nBasic Unit Conversion\n");
         printf("(1) Length\n(2) Area\n(3) Volume\n(4) Mass\n(5) Pressure\n(6) Temperature\n\nInput answer here: ");
         scanf("%d", &mode);
-
         switch (mode)
         {
         case 1:
             printf("\n\nLength\n");
-
             printf("(1) Feet to Meters\n(2) Meters to Feet\n(3) Inches to Centimeters\n(4) Centimeters to Inches\n\nInput answer here: ");
             scanf("%d", &mode);
-
             switch (mode)
             {
             case 1:
@@ -41,7 +37,6 @@ int main()
                 ft *= 0.3048;
                 printf("The answer is %lf Meters", ft);
                 break;
-
             case 2:
                 printf("\n\nMeters to Feet\n");
                 printf("Enter Meters: ");
@@ -49,7 +44,6 @@ int main()
                 meters *= 3.281;
                 printf("The answer is %.2f Feet", meters);
                 break;
-
             case 3:
                 printf("\n\nInches to Centimeters\n");
                 printf("Enter Inches: ");
@@ -57,7 +51,6 @@ int main()
                 in *= 2.54;
                 printf("The answer is %lf Centimeters", in);
                 break;
-
             case 4:
                 printf("\n\nCentimeter to Inches\n");
                 printf("Enter Centimeters: ");
@@ -65,18 +58,14 @@ int main()
                 cm *= 0.3937;
                 printf("The answer is %lf Inches", cm);
                 break;
-
             default:
                 printf("Error! Incorrect input");
             }
             break;
-
         case 2:
             printf("\n\nArea\n");
-
             printf("(1) Square Feet to Square Meters\n(2) Square Meters to Square Feet\n(3) Acres to Square Meters\n(4) Square Meters to Acres\n\nInput answer here: ");
             scanf("%d", &mode);
-
             switch (mode)
             {
             case 1:
@@ -86,7 +75,6 @@ int main()
                 sqft *= 0.0929;
                 printf("The answer is %lf square meters", sqft);
                 break;
-
             case 2:
                 printf("\n\nSquare Meters to Square Feet\n");
                 printf("Enter Square Meters: ");
@@ -94,7 +82,6 @@ int main()
                 sqmt *= 10.764;
                 printf("The answer is %lf square feet", sqmt);
                 break;
-
             case 3:
                 printf("\n\nAcres to Square Meters\n");
                 printf("Enter Acres: ");
@@ -102,7 +89,6 @@ int main()
                 acres *= 4046.86;
                 printf("The answer is %lf Square Meters", acres);
                 break;
-
             case 4:
                 printf("\n\nSquare Meters to Acres\n");
                 printf("Enter Square Meters: ");
@@ -110,17 +96,14 @@ int main()
                 sqmt *= 0.000247;
                 printf("The answer is %lf acres", sqmt);
                 break;
-
             default:
                 printf("Error! Incorrect input");
             }
             break;
-
         case 3:
             printf("\n\nVolume\n");
             printf("(1) Cubic Feet to Cubic Meters\n(2) Cubic Meters to Cubic Feet\n\nInput answer here: ");
             scanf("%d", &mode);
-
             switch (mode)
             {
             case 1:
@@ -130,7 +113,6 @@ int main()
                 cft *= 0.0283;
                 printf("The answer is %lf cubic meters", cft);
                 break;
-
             case 2:
                 printf("\n\nCubic Meters to Cubic Feet\n");
                 printf("Enter Cubic Meters");
@@ -138,17 +120,14 @@ int main()
                 cmeters *= 35.314;
                 printf("The answer is %lf cubic feet", cmeters);
                 break;
-
             default:
                 printf("Error! Incorrect input");
             }
             break;
-
         case 4:
             printf("\n\nMass\n");
             printf("(1) Pounds to Kilograms\n(2) Kilograms to Pounds\n\nInput answer here: ");
             scanf("%d", &mode);
-
             switch (mode)
             {
             case 1:
@@ -158,7 +137,6 @@ int main()
                 pounds *= 0.4536;
                 printf("The answer is %lf kg", pounds);
                 break;
-
             case 2:
                 printf("\n\nKilograms to Pounds\n");
                 printf("Enter Kilograms: ");
@@ -166,17 +144,14 @@ int main()
                 kg *= 2.205;
                 printf("The answer is %lf kilograms", kg);
                 break;
-
             default:
                 printf("Error! Incorrect input");
             }
             break;
-
         case 5:
             printf("\n\nPressure\n");
             printf("(1) Pounds per Square Inch to Kilopascals\n(2) Kilopascals to Pounds per Square Inch\n\nInput answer here: ");
             scanf("%d", &mode);
-
             switch (mode)
             {
             case 1:
@@ -186,7 +161,6 @@ int main()
                 pounds *= 6.894;
                 printf("The answer is %lf kilopascals", pounds);
                 break;
-
             case 2:
                 printf("\n\nKilopascals to Pounds per Square Inch");
                 printf("Enter Kilopascals: ");
@@ -194,17 +168,14 @@ int main()
                 kp *= 0.145;
                 printf("The answer is %lf pounds per square inch", kp);
                 break;
-
             default:
                 printf("Error! Incorrect input");
             }
             break;
-
         case 6:
             printf("\n\nTemperature\n");
             printf("(1) Celcius to Fahrenheit\n(2) Fahrenheit to Celcius\n\nInput answer here: ");
             scanf("%d", &mode);
-
             switch (mode)
             {
             case 1:
@@ -214,7 +185,6 @@ int main()
                 ce = ce * 9 / 5 + 32;
                 printf("The answer is %lf fahrenheit", ce);
                 break;
-
             case 2:
                 printf("\n\nFahrenheit to Celcius\n");
                 printf("Enter Fahrenheit: ");
@@ -222,7 +192,6 @@ int main()
                 f = 26 * 9 / 5 + 32;
                 printf("The answer is %lf celcius", f);
                 break;
-
             default:
                 printf("Error! Incorrect input");
             }
@@ -232,12 +201,10 @@ int main()
             printf("Error! Incorrect input");
         }
         break;
-
     case 2:
         printf("\n\nArchitecture Math\n");
         printf("(1) Get the Area of a Rectangle\n(2) Get the Area of a Triangle\n(3) Get the Area of a Circle\n(4) Get the Perimeter of a Rectangle\n(5) Get the Perimeter of a Triangle\n(6) Get the Circumference of a Circle\n(7) Get the Volume of a Rectangular Prism\n(8) Get the Volume of a Cylinder\n(9) Get the Volume of a Sphere\n(10) Get the Volume of a Pyramid\n(11) Solve for Pythagorean Theorem\n(12) Find the Slope of a Line\n\nInput answer here: ");
         scanf("%d", &mode);
-
         switch (mode)
         {
         case 1:
@@ -249,7 +216,6 @@ int main()
             area = length * width;
             printf("The area of the rectangle is %lf", area);
             break;
-
         case 2:
             printf("\n\nGet the Area of a Triangle\n");
             printf("Enter base: ");
@@ -259,7 +225,6 @@ int main()
             area = base * height * 1 / 2;
             printf("The area of the triangle is %lf", area);
             break;
-
         case 3:
             printf("\n\nGet the Area of a Circle\n");
             printf("Enter radius: ");
@@ -267,7 +232,6 @@ int main()
             area = pi * (radius * radius);
             printf("The area of the circle is %lf", area);
             break;
-
         case 4:
             printf("\n\nGet the Perimeter of a Rectangle\n");
             printf("Enter length: ");
@@ -277,7 +241,6 @@ int main()
             perimeter = 2 * (length + width);
             printf("The perimeter of the rectangle is %lf", perimeter);
             break;
-
         case 5:
             printf("\n\nGet the Perimeter of a Triangle\n");
             printf("Enter side a: ");
@@ -289,7 +252,6 @@ int main()
             perimeter = a + b + c;
             printf("The perimeter of the triangle is %lf", perimeter);
             break;
-
         case 6:
             printf("\n\nGet the Circumference of a Circle\n");
             printf("Enter radius: ");
@@ -297,7 +259,6 @@ int main()
             circumference = 2 * pi * radius;
             printf("The circumference of the circle is %lf", circumference);
             break;
-
         case 7:
             printf("\n\nGet the Volume of a Rectangular Prism\n");
             printf("Enter length: ");
@@ -309,7 +270,6 @@ int main()
             volume = length * width * height;
             printf("The volume of the rectangular prism is: %lf", volume);
             break;
-
         case 8:
             printf("\n\nGet the Volume of a Cylinder\n");
             printf("Enter radius: ");
@@ -319,7 +279,6 @@ int main()
             volume = pi * (radius * radius) * height;
             printf("The volume of the cylinder is %lf", volume);
             break;
-
         case 9:
             printf("\n\nGet the Volume of a Sphere\n");
             printf("Enter radius: ");
@@ -327,7 +286,6 @@ int main()
             volume = (4 / 3) * pi * (radius * radius * radius);
             printf("The volume of the sphere is %lf", volume);
             break;
-
         case 10:
             printf("\n\nGet the Volume of a Pyramid\n");
             printf("Enter base: ");
@@ -337,7 +295,6 @@ int main()
             volume = base * height * 1 / 3;
             printf("The volume of the pyramid is %lf", volume);
             break;
-
         case 11:
             printf("\n\nSolve for Pythagorean Theorem\n");
             printf("Enter a: ");
@@ -348,7 +305,6 @@ int main()
             c = sqrtf(c);
             printf("The answer is %lf", c);
             break;
-
         case 12:
             printf("\n\nFind the Slope of a Line\n");
             printf("Enter x1: ");
@@ -372,7 +328,6 @@ int main()
             printf("Error! Incorrect input");
         }
         break;
-
     case 3:
         printf("\n\nChoose your operator:\nAddition (+)\nSubtraction (-)\nMultiplication (*)\nDivision (/)\n\nEnter operator here: ");
         scanf("%s", &operator);
@@ -412,7 +367,6 @@ int main()
             break;
         }
         break;
-
     default:
         printf("Error! Incorrect input");
     }
