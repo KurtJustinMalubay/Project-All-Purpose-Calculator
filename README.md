@@ -1,3 +1,5 @@
+# Project All Purpose Calculator
+
 This is a multipurpose calculator made by me a student at Cebu Institute of Technology University. The program that I made is a simple multipurpose calculator which contains three major functions which are Conversion, Architecture Math, and Basic Calculator. This program is made by using C programming language which is what we use on our class currently. Note: this program is the application on what I've learned on our subject CSIT121 subject.
 
 ## Table of Contents
